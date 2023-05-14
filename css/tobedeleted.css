@@ -1,0 +1,83 @@
+
+.about{
+  /* background-image: url(../Images/guturight.png); */
+  margin-left: 60px;
+  float: left;
+  /* background-color: silver;
+  background-color: #00CCFF; */
+  padding-left: 20px;
+  width: 40%;
+  height: 500px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.about1{
+  /* background-image: url(../Images/guturight.png); */
+  margin-right: 60px;
+  float: right;
+  /* background-color: silver; */
+  /* background-color: #00CCFF; */
+  padding-left: 20px;
+  width: 40%;
+  height: 500px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.ab_p1{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: serif;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 20px;
+  }
+.ab_p2{
+  padding-top: 20px;
+  font-family: monospace;
+  font-size: 15px;
+  padding: 25px;
+}
+.about span{
+  color: blue;
+  font-size: 20px;
+  font-family: serif;
+  font-weight: bold;
+  padding: 40px;
+}
+
+/*TODO: Resume*/
+.resume {
+  margin-top: 100px;
+  height: 350px;
+  width: 99%;
+  /* background-color: silver; */
+  /* background-color: #0033FF; */
+  /* border-top: 3px ridge  silver;
+  border-right: 3px ridge  silver;
+  border-left: 3px ridge  silver; */
+  /* border-bottom-color: silver; */
+  border-bottom: 3px;
+  border-radius: 10px 50px 10px 50px;
+  border-style :groove;
+  border-width: medium;
+  border-color: lightblue;
+  }
+
+.resume1 {
+  margin-top: 100px;
+  height: 350px;
+  width: 99%;
+  /* background-color: Gainsboro; */
+  /* background-color: #0033FF; */
+  /* border-top: 3px solid  silver;
+  border-right: 3px solid  silver;
+  border-left: 3px solid  silver;
+  border-bottom-color: silver; */
+  border-bottom: 3px;
+  border-radius: 10px 50px 10px 50px;
+  border-style :dashed;
+  border-width: medium;
+  border-color: lightblue;
+}
