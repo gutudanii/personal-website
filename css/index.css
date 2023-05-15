@@ -281,7 +281,8 @@ input[type=submit]:hover {
 }
 
 .serv_1{
-    margin-top: 70px;
+    font-size: 16px;
+    margin-top: 60px;
     background-color: white;
     width: 100%;
     height: 1000px;
@@ -298,15 +299,28 @@ input[type=submit]:hover {
   box-shadow: 3px 2px 100px silver;
   background: linear-gradient(to bottom,rgb(230, 234, 245) 20%, #3399ff  60%);
   background-size: 100% 200%;
-  position: static;
+  /* position: static; */
   border-style: groove;
   border-color: silver;
   border-width: 1px;
   transition: all 1.5s;
-  font-family: monospace;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  color: darkblue;
 
 }
-
+.serv_1 div p{
+    padding: 20px;
+    display: block;
+}
+.serv_1 i{
+  /* background-color: white; */
+  opacity: 60%;
+  border-radius: 20px;
+  padding: 10px;
+  /* padding-top: 20px; */
+  font-size: 20px;
+}
 .serv_1 div:hover{
   /* background-color: lightblue; */
   /* transition: all 0.7s; */
@@ -320,16 +334,80 @@ input[type=submit]:hover {
   box-shadow: 0 0 20px silver;
   transition: all 1.5s;
   font-weight: bolder;
-}
-.serv_1 div p{
-    padding: 20px;
-    display: grid;
+  opacity: 100%;
 }
 .port_1{
-  /* background-color: silver; */
   width: 100%;
-  height: 620px;
+  height: 1600px;
   overflow: hidden;
+}
+.port_cont{
+    display: grid;
+    margin: 50px;
+    float: left;
+    box-shadow: 0px 0px 0px silver;
+    /* padding: 40px; */
+    border-radius: 20px;
+}
+.port_pic{
+  /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLlnTa1_hvfsAbfb9EH7UlbrgkufjBlwEXIw&usqp=CAU'); */
+  /* float: left; */
+  background-image: url('../Images/gutu.png');
+  margin-top: 30px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  /* width: 70%; */
+  width: 250px;
+  height: 250px;
+  /* background-color: red; */
+  box-shadow: 2px 3px 100px silver;
+}
+.port_pic_p1{
+  width: 280px;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 40px;
+  background-color: #303131;
+  color: white;
+}
+.port_pic_p2{
+  display: inline-flex;
+  width: 280px;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 40px;
+  background-color: #0099FF;
+  color: white;
+}
+.port_pic_p3{
+  display: inline-flex;
+  width: 280px;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 40px;
+  background-color: blue;
+  color: white;
+}
+.port_pic_lang , .port_pic_skill {
+  background-color: #e4ecec;
+  padding: 11px;
+}
+.port_pic_lang table tr td, .port_pic_skill table tr td{
+  padding: 5px;
+  padding-bottom: 10px;
+}
+
+.port_cont_1{
+  margin-top: 160px;
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.port_cont_1 table tr td{
+  padding: 7px;
+  color: #65646d;
+  /* padding-left: 70px; */
 }
 
 /*TODO PHONE*/
