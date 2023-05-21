@@ -6,6 +6,32 @@
 body {
   font-family: sans-serif;
   font-style:normal;
+  background-color: white;
+  color: black;
+}
+
+.dark-mode{
+  /* background-color: #404040; */
+  background-color: #00021F;
+}
+.lightM{
+  background-color: white;
+  color: black;
+}
+.tt_new{
+  box-shadow: none;
+}
+#darkM{
+  right: 0;
+  margin: 10px;
+  margin-right: 20px;
+  color: whitesmoke;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #404040;
+  text-decoration: none;
+  font-size: 30px;
+  position: fixed;
 }
 
 #nav {
@@ -18,7 +44,9 @@ body {
   border-radius: 15px;
   scroll-behavior: smooth;
 }
-.nava{
+/* OLD NAV CODE */
+
+/* .nava{
   float: left;
   display: block;
   margin: 22px 20px;
@@ -28,7 +56,7 @@ body {
   color: whitesmoke;
   font-family: sans-serif;
   font-size: 17.5px;
-}
+} */
 .nava:hover {
     color: silver;
     transition-duration: 0.9s;
@@ -48,8 +76,8 @@ body {
     background-image: url('../Images/gutu.png');
     background-repeat: no-repeat;
     background-position: left;
-    margin-top: 90px;
-    background-color: white;
+    margin-top: 30px;
+    /* background-color: white; */
     height: 580px;
     width: 100%;
     display: inline-flex;
@@ -108,7 +136,7 @@ body {
   display: inline-flex;
   height: 600px;
   overflow: hidden;
-  background-color: white;
+  /* background-color: white; */
   padding: 50px;
   float: right;
 }
@@ -160,7 +188,7 @@ body {
   transition: all 1.6s;
 }
 .social_media a:hover{
-  color: black;
+  color: lightblue;
   transition: all 1.6s;
 }
 .social_media a:first-child{
@@ -184,7 +212,8 @@ body {
   white-space: nowrap; /* Prevents line breaks */
   border-right: 0.15em solid black  ; /* Creates the blinking cursor effect */
   animation: typing 3s steps(10, end), backspace 2s steps(10, end) 3s;
-  animation shorthand property for typing and backspacing animations
+  /* animation-iteration-count: infinite; */
+  /* animation shorthand property for typing and backspacing animations */
 }
 
 @keyframes typing {
@@ -238,7 +267,7 @@ body {
 .box_1{
   width: 100%;
   height: 640px;
-  background-color: white;
+  /* background-color: white; */
   padding-top: 100px;
 }
 
@@ -247,7 +276,7 @@ body {
   padding-top: 30px;
   width: 50%;
   height: 480px;
-  background-color: white;
+  /* background-color: white; */
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -285,14 +314,14 @@ input[type=submit]:hover {
 .serv_1{
     font-size: 16px;
     margin-top: 60px;
-    background-color: white;
+    /* background-color: white; */
     width: 100%;
     height: 1000px;
 }
 
 .serv_1 div{
   display: inline-flex;
-  background-color: white;
+  /* background-color: white; */
   border-radius: 10%;
   width: 30%;
   margin: 10px;
@@ -331,7 +360,8 @@ input[type=submit]:hover {
   /* transform: skew(-30deg); */
   /* transform: translate(10px, 15px); */
   background-position: right bottom;
-  color: whitesmoke;
+  /* color: whitesmoke; */
+  color: indigo;
   border: none;
   box-shadow: 0 0 20px silver;
   transition: all 1.5s;
@@ -425,45 +455,89 @@ input[type=submit]:hover {
 .port_cont_1 table tr td a:hover{
   color: #3b3b3f;
   border: 2px solid #3b3b3f;
-  background-color: #e0e0e0;
+  /* background-color: #e0e0e0; */
+}
+.topnav .icon {
+  display: none;
 }
 /*TODO PHONE*/
-@media screen and (max-width: 600px) {
-  .nava{
-    padding: 28px 20px;
-    font-family: sans-serif;
-    text-decoration: none;
-    font-weight: bolder;
-  }
-  .logo{
-    float: left;
-    display: block;
-    padding: 10px 45px;
-    width: 100px;
-    height: 50px;
-    padding-right: 650px;
-  }
-
+.nava{
+  float: left;
+  display: block;
+  margin: 22px 20px;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-weight: bolder;
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-size: 17.5px;
 }
-@media (max-width: 768px){
-  .nava{
-    float: left;
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    margin: 0px;
+    color: white;
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 30px;
     display: block;
-    padding: 28px 20px;
+  }
+  .nava{
+    /* float: left; */
+    display: grid;
+    /* margin: 22px 20px; */
     font-family: sans-serif;
     text-decoration: none;
     font-weight: bolder;
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 12px;
   }
-  .nava:hover {
-      color: black;
-      transition-duration: 1.7s;
+  .box .text{
+    display: inline-flex;
+  }
+  .box .button1{
+    display: inline-flex;
+  }
+  .box{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    padding: 15px;
+    font-size: 30px;
+    right: 0;
+    color: white;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    padding: 5px;
+    font-size: 15px;
+    display: grid;
+    text-align: center;
   }
   .logo{
     float: left;
-    display: block;
-    padding: 10px 45px;
+    display: grid;
+    margin: 10px 45px;
     width: 100px;
-    height: 50px;
-    padding-right: 650px;
+    height: 40px;
+    margin-right: 65px;
+  }
+  .box .text{
+    display: inline-flex;
+  }
+  .box .button1{
+    display: inline-flex;
+  }
+  .box{
+    width: 100%;
   }
 }
