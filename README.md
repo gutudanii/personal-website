@@ -17,11 +17,11 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/your-repo-name.git
+    git clone https://github.com/gutudanii/personal-website.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd your-repo-name
+    cd personal-website
     ```
 
 3. Open `index.html` in your preferred web browser.
